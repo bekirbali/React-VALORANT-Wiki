@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.container {
+  font-family: $titleFont;
+  background-color: $red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  .cards {
+    text-align: center;
+    cursor: pointer;
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      .image {
+        img {
+          width: 300px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.03);
+          }
+        }
+      }
+    }
+  }
+}

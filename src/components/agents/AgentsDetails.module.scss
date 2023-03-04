@@ -1,0 +1,40 @@
+@import "../../scss/variables";
+.details {
+  .char {
+    text-align: center;
+    padding: 0 0.5rem;
+    img {
+      width: 150px;
+    }
+    p {
+      font-family: $descFont;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    h1 {
+      font-family: $titleFont;
+    }
+  }
+  .abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    .ability {
+      text-align: center;
+      color: $white;
+      background-color: $red;
+      width: 300px;
+      flex: 1;
+      padding: 1rem;
+      border-radius: 0.5rem;
+
+      h2 {
+        color: $darkWhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}
