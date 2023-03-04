@@ -24,6 +24,7 @@ const AgentsDetails = () => {
         <div className={styles.details}>
           <div className={styles.char}>
             <h1>{agent.displayName}</h1>
+            <h4>({agent.role.displayName})</h4>
             <img src={agent.bustPortrait} alt="" />
             <p>{agent.description}</p>
           </div>
@@ -42,6 +43,7 @@ const AgentsDetails = () => {
         <div className={styles.details}>
           <div className={styles.char}>
             <h1>{agentData?.data?.displayName}</h1>
+            <h4>({agentData?.data?.role.displayName})</h4>
             <img src={agentData?.data?.bustPortrait} alt="" />
             <p>{agentData?.data?.description}</p>
           </div>
@@ -50,6 +52,7 @@ const AgentsDetails = () => {
               return (
                 <div key={index} className={styles.ability}>
                   <h2>{ability.displayName}</h2>
+
                   <p>{ability.description}</p>
                 </div>
               );
