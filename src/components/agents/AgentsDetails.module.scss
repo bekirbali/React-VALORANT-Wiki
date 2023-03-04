@@ -1,5 +1,6 @@
 @import "../../scss/variables";
 .details {
+  margin-bottom: 1rem;
   .char {
     text-align: center;
     padding: 0 0.5rem;
@@ -18,6 +19,7 @@
   .abilities {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     padding: 0.5rem;
     .ability {
@@ -25,7 +27,7 @@
       color: $white;
       background-color: $red;
       width: 300px;
-      flex: 1;
+
       padding: 1rem;
       border-radius: 0.5rem;
 
