@@ -20,9 +20,7 @@ const Card = ({ agents }) => {
               </div>
               <p>{description}</p>
               <div className={styles.btn}>
-                <button
-                  onClick={() => navigate(`details/${uuid}`, { state: agent })}
-                >
+                <button onClick={() => navigate(`${uuid}`, { state: agent })}>
                   Read More
                 </button>
               </div>

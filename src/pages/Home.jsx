@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Agents />} />
-        <Route path="/details/:uuid" element={<AgentsDetails />} />
+        <Route path="/:uuid" element={<AgentsDetails />} />
         <Route path="/weapons" element={<Weapons />} />
         <Route path="/maps" element={<Maps />} />
         <Route path="/maps/:uuid" element={<MapsDetail />} />

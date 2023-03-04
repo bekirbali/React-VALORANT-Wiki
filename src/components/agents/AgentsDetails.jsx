@@ -10,7 +10,7 @@ const AgentsDetails = () => {
   const { uuid } = useParams();
   const getAgent = async () => {
     const { data } = await axios(
-      `https://valorant-api.com/v1/agents?isPlayableCharacter=true&language=tr-TR/${uuid}`
+      `https://valorant-api.com/v1/agents/${uuid}?isPlayableCharacter=true&language=tr-TR`
     );
     setAgentData(data);
     console.log(agentData?.data);
@@ -41,12 +41,12 @@ const AgentsDetails = () => {
       ) : (
         <div className={styles.details}>
           <div className={styles.char}>
-            <h1>{agentData?.data.displayName}</h1>
-            <img src={agentData?.data.bustPortrait} alt="" />
-            <p>{agentData?.data.description}</p>
+            <h1>{agentData?.data?.displayName}</h1>
+            <img src={agentData?.data?.bustPortrait} alt="" />
+            <p>{agentData?.data?.description}</p>
           </div>
           <div className={styles.abilities}>
-            {agentData?.data.abilities?.map((ability, index) => {
+            {agentData?.data?.abilities?.map((ability, index) => {
               return (
                 <div key={index} className={styles.ability}>
                   <h2>{ability.displayName}</h2>
