@@ -8,7 +8,7 @@ const Card = ({ agents }) => {
   return (
     <>
       {agents?.data?.map((agent) => {
-        const { displayName, displayIcon, description, uuid } = agent;
+        const { displayName, displayIcon, description, uuid, role } = agent;
         return (
           <div key={uuid} className={styles.cards}>
             <div className={styles.image}>
@@ -17,6 +17,8 @@ const Card = ({ agents }) => {
             <div className={styles.desc}>
               <div className={styles.name}>
                 <h1>{displayName}</h1>
+                <h4>({role.displayName})</h4>
+                <h4></h4>
               </div>
               <p>{description}</p>
               <div className={styles.btn}>

@@ -14,21 +14,12 @@ const MapsDetail = () => {
   const getMap = async () => {
     const { data } = await axios(`https://valorant-api.com/v1/maps/${uuid}`);
     setMapData(data);
-    console.log(mapData?.data);
   };
 
   useEffect(() => {
     setLoading(false);
     getMap();
-    console.log(mapData);
   }, []);
-
-  // style={{
-  //   backgroundImage: `url${map ? map?.splash : mapData?.splash}`,
-  //   minHeight: "calc(100vh - 99px)",
-  //   backgroundPosition: "center",
-  //   backgroundSize: "cover",
-  // }}
 
   return (
     <div>
