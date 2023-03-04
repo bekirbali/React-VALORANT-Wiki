@@ -6,9 +6,10 @@
   gap: 1rem;
   justify-content: space-between;
 
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   align-items: center;
   background-color: $darkWhite;
+  border-bottom: 1px solid $red;
   .wiki {
     display: flex;
     align-items: center;
