@@ -24,7 +24,7 @@ const AgentsDetails = () => {
         <div className={styles.details}>
           <div className={styles.char}>
             <h1>{agent.displayName}</h1>
-            <h4>({agent.role.displayName})</h4>
+            <h4>({agent?.role?.displayName})</h4>
             <img src={agent.bustPortrait} alt="" />
             <p>{agent.description}</p>
           </div>
