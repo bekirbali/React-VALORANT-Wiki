@@ -7,6 +7,7 @@ import Maps from "./Maps";
 import Weapons from "./Weapons";
 import MapsDetail from "../components/maps/MapsDetail";
 import WeaponDetail from "../components/weapons/WeaponDetail";
+import NotFound from "./NotFound";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Route path="/weapons/:uuid" element={<WeaponDetail />} />
         <Route path="/maps" element={<Maps />} />
         <Route path="/maps/:uuid" element={<MapsDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
