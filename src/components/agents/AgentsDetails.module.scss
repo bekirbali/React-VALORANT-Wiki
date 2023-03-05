@@ -40,3 +40,13 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .details {
+    .char {
+      img {
+        width: 350px;
+      }
+    }
+  }
+}
