@@ -1,25 +1,55 @@
 import valoLogo from "../assets/valoLogo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.wiki}>
-        <Link to="/">
+        <NavLink to="/">
           <img width="100px" src={valoLogo} alt="" />
-        </Link>
+        </NavLink>
         <h1>VALORANT WIKI</h1>
       </div>
       <ul className={styles.list}>
         <li>
-          <Link to="/">Agents</Link>
+          <NavLink
+            to="/"
+            style={({ isActive }) => {
+              return {
+                color: isActive && "#ece8e1",
+                backgroundColor: isActive && "#f74554",
+              };
+            }}
+          >
+            Agents
+          </NavLink>
         </li>
         <li>
-          <Link to="/weapons">Weapons</Link>
+          <NavLink
+            to="/weapons"
+            style={({ isActive }) => {
+              return {
+                color: isActive && "#ece8e1",
+                backgroundColor: isActive && "#f74554",
+              };
+            }}
+          >
+            Weapons
+          </NavLink>
         </li>
         <li>
-          <Link to="/maps">Maps</Link>
+          <NavLink
+            to="/maps"
+            style={({ isActive }) => {
+              return {
+                color: isActive && "#ece8e1",
+                backgroundColor: isActive && "#f74554",
+              };
+            }}
+          >
+            Maps
+          </NavLink>
         </li>
       </ul>
     </div>

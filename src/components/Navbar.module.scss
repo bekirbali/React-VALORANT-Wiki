@@ -5,11 +5,12 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
-
   padding: 0 1rem;
   align-items: center;
   background-color: $darkWhite;
   border-bottom: 1px solid $red;
+  font-family: $titleFont;
+  margin: auto;
   .wiki {
     display: flex;
     align-items: center;
@@ -27,8 +28,11 @@
       padding: 0.5rem;
       border-radius: 0.2rem;
       text-decoration: none;
-      background-color: $red;
-      color: $white;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border: 1px solid $red;
+      color: $red;
+      transition: 0.2s ease-in-out;
       &:hover {
         opacity: 0.9;
       }
