@@ -28,7 +28,7 @@ const MapsDetail = () => {
           className={styles.details}
           style={{
             backgroundImage: `url(${map?.splash})`,
-            minHeight: "calc(100vh - 99px)",
+            minHeight: "calc(100vh - 84px)",
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
@@ -49,7 +49,7 @@ const MapsDetail = () => {
           className={styles.details}
           style={{
             backgroundImage: `url(${mapData?.data?.splash})`,
-            minHeight: "calc(100vh - 99px)",
+            minHeight: "calc(100vh - 84px)",
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
