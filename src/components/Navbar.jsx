@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <div className={styles.wiki}>
         <NavLink to="/">
-          <img width="100px" src={valoLogo} alt="" />
+          <img width="100px" src={valoLogo} alt="ValoLogo" />
         </NavLink>
         <h1>VALORANT WIKI</h1>
       </div>
