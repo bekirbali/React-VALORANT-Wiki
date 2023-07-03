@@ -13,7 +13,7 @@ const MapCard = ({ maps }) => {
           <div key={uuid} className={styles.cards}>
             <div className={styles.info}>
               <h1>{displayName}</h1>
-              <h3>{coordinates}</h3>
+              <h3>{coordinates ? coordinates : "No Location"}</h3>
               <div className={styles.image}>
                 <img
                   src={splash}
